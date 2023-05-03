@@ -7,11 +7,12 @@
     */
 
     //ENTRADA
-
-
+    const algumasGramas = Number(prompt (`Quantas gramas de ração o cão come diariamente?`).replace(".", ","));
+    const pesoRacaoComida = Number (prompt(`Qual é o peso da ração comida?`).replace(".", ","));
+   
     //PROCESSAMENTO
-
+    const pesoDaRacao = (algumasGramas * 0,85) + (algumasGramas * pesoRacaoComida);
 
     //SAÍDA
-
+    document.write(`O peso consumido semanalmente será de Kg${pesoDaRacao.toFixed(2).replace(".", ",")}.`);
 </script>
